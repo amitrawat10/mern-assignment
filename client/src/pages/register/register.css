@@ -1,0 +1,69 @@
+.register {
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.register-form {
+    height: 430px;
+    width: 330px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.register-form h2 {
+    color: #333;
+    margin-bottom: .66rem;
+}
+
+.register-form div {
+    width: 100%;
+
+}
+
+.register-form div input {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+}
+
+.register-form .error-text {
+    color: red;
+    font-size: 11px;
+    align-self: flex-start;
+}
+
+.register-btn {
+    background-color: #5372f0;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.register-btn:hover {
+    background-color: #3e5acd;
+}
+
+.register-btn:active {
+    transform: translateY(2px);
+}
+
+.login-link span {
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 400;
+}
