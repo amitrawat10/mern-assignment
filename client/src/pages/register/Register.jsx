@@ -43,6 +43,12 @@ const Register = ({ adminCreate }) => {
       if (formData.password !== formData.confirmPassword) {
         setErrorText("Password & confirm password should match");
         return;
+      } else if (
+        formData.password.length < 8 ||
+        formData.confirmPassword.length < 8
+      ) {
+        setErrorText("Password & confirm password should 8 character long");
+        return;
       } else {
         adminCreate && dispatch(createUser(formData));
         if (adminCreate) navigate("/");
